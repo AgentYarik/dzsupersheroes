@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://gamerwall.pro/uploads/posts/2021-11/1637867149_1-gamerwall-pro-p-marvel-studios-logo-oboi-na-rabochii-stol-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+}
+.title {
+    text-align: center;
+    color: #fff;
+    width: 100px;
+    background-color: rgb(236, 235, 235);
+    color: rgba(0, 0, 0, 0.822);
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.title:hover{
+    background-color: rgb(195, 16, 16);
+    cursor: pointer;
+    letter-spacing: -1px;
+    font-size: 15px;
+    padding: 18px 38px;
+    letter-spacing: 3px;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+}
+.block {
+    position: relative;
+    width: 1200px;
+    height: 650px;
+    left: 100px;
+}
+.photo-1 {
+    position: absolute;
+    left: 190px;
+    bottom: 0;
+    animation: Spid 2s ease;
+    cursor: pointer;
+}
+.photo-1:hover{
+    transition: 1s;
+}
+.photo-1 img{
+    animation: mers 1s ease infinite alternate;
+}
+@keyframes mers{
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+@keyframes Spid{
+    0%{
+        transform: translateX(-600px);
+    }
+    50%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.spider {
+    opacity: 0;
+    position: absolute; 
+}
+.photo-2 {
+    position: absolute;
+    left: 410px;
+    cursor: pointer;
+    animation: fly 2s ease infinite alternate
+}
+@keyframes fly {
+    0% {
+        transform: translateX(-60%) translateY(-60%); 
+    }
+    25% {
+        transform: translateX(35%);
+    }
+    75% {
+        transform: translateX(-30%); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+.element {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateX(-60%) translateY(-60%);
+    animation: fly 2s linear infinite; 
+}
+
+
+.fly {
+    opacity: 0;
+    position: absolute;
+}
+.iron-man {
+    opacity: 0;
+    position: absolute;
+}
+
+.photo-3 {
+    position: absolute;
+    left: 660px;
+    bottom: 0;
+    animation: USA 2s ease;
+    cursor: pointer;
+}
+.photo-3 img{
+    animation: Amr 2s ease infinite alternate;
+}
+@keyframes Amr{
+    0%{
+        transform: scale(0.5) rotate(30deg);
+    }
+    50%{
+        transform: matrix(1.2,0,0.5,1.2,50,0);
+    }
+    100%{
+        transform: skew(60);
+    }
+}
+@keyframes USA{
+    0%{
+        transform: translateX(550px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.amerika {
+    opacity: 0;
+    position: absolute;
+}
+.photo-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.photo-4 img{
+    animation: pauk 2s ease infinite alternate;
+}
+@keyframes pauk{
+    0% {
+        transform: translate(0, 0); 
+    }
+    25% {
+        transform: translate(40px, 40px); 
+    }
+    50% {
+        transform: translate(0, 90px); 
+    }
+    75% {
+        transform: translate(-40px, 40px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.spider {
+}
